@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	
+</head>
+<body onLoad="ini()">
+<center><h1>Agenda</h1></center>
+
+<div id="pnlContactos" class="form-style-8">
+  <h2>Lista de contactos</h2>
+  <ul id="listaContactos">
+
+  </ul>
+  <input type="button" id="btnNuevo" value="Nuevo" />
+</div>
+
+<div id="pnl" style="display:none" class="form-style-8">
+  <h2>Formulario nuevo/editar contacto</h2>
+  <form>
+    <input type="text" id="txtNombre" name="txtNombre" placeholder="Nombre completo" />
+    <input type="text" id="txtTelefono" placeholder="Telefono" />
+    <input type="email" id="txtEmail" placeholder="Email" />
+    <input type="button" id="btnGuardar" value="Guardar" />
+    <input type="button" id="btnCancelar" value="Cancelar" />
+  </form>
+  
+</div>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
