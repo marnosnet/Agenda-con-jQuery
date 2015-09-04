@@ -10,11 +10,11 @@ $(document).ready(function () {
 		$("#pnl").slideUp("slow");
 	});
 	$("#btnGuardar").click(function () {
-		var nombre = $("#txtNombre").value;
-		var telefono = $("#txtTelefono").value;
-		var email = $("#txtEmail").value;
+		var nombre = $("#txtNombre").val();
+		var telefono = $("#txtTelefono").val();
+		var email = $("#txtEmail").val();
 		var contacto = nombre + " - " + telefono + " - " + email;
-		$("#listaContactos").append($("<li />").text("marcos"));
+		$("#listaContactos").append("<li>" + contacto + "</li>");
 		$("#pnlContactos").slideDown("slow");
 		$("#pnl").slideUp("slow");
 	})
